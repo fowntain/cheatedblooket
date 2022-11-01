@@ -8,7 +8,6 @@ window.hello = function () {
 
 $(iframeDoc).ready(function (event) {
     iframeDoc.open();
-    iframeDoc.write('CBlooket V1.02');
     iframeDoc.write('\<script>alert("testing from iframe!");\<\/script>');
     iframeDoc.write('\<script>parent.hello();\<\/script>');
     iframeDoc.close();
